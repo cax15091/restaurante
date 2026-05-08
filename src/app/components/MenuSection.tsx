@@ -25,7 +25,7 @@ const menuData = {
       name: "Guacamole Ahumado",
       desc: "Guacamole preparado en mesa con totopos artesanales.",
       price: "$160",
-      image: "https://images.unsplash.com/photo-1548943487-a2e4e43b4859?auto=format&fit=crop&w=800&q=80",
+      image: "https://images.unsplash.com/photo-1541518763669-27fef04b14ea?auto=format&fit=crop&w=800&q=80",
       tag: "Para compartir",
       tagColor: "bg-[#0B1F33]",
     },
