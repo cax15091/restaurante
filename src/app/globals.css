@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@import "tailwindcss";
+
+:root {
+  --ocean: #0B1F33;
+  --ocean-light: #112840;
+  --sand: #E6D3B3;
+  --sand-light: #F0E5D0;
+  --ivory: #F8F6F2;
+  --coral: #F07B72;
+  --gold: #C9A86A;
+  --gold-light: #D9BE8A;
+  --text-dark: #1A1A1A;
+  --text-muted: #6B7280;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--ivory);
+  color: var(--text-dark);
+  font-family: 'Inter', sans-serif;
+}
+
+.font-serif {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--ocean);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--gold);
+  border-radius: 3px;
+}
+
+/* Star rating */
+.star-filled { color: #F59E0B; }
+.star-empty { color: #D1D5DB; }
+
+/* CTA Button primary */
+.btn-primary {
+  background: linear-gradient(135deg, var(--coral) 0%, #E05A50 100%);
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  border-radius: 9999px;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 15px rgba(240, 123, 114, 0.35);
+}
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(240, 123, 114, 0.45);
+}
+
+/* CTA Button secondary */
+.btn-secondary {
+  border: 2px solid white;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  border-radius: 9999px;
+  transition: all 0.2s ease;
+  background: transparent;
+}
+.btn-secondary:hover {
+  background: white;
+  color: var(--ocean);
+}
+
+/* Gold outline button */
+.btn-gold {
+  border: 2px solid var(--gold);
+  color: var(--gold);
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  border-radius: 9999px;
+  transition: all 0.2s ease;
+  background: transparent;
+}
+.btn-gold:hover {
+  background: var(--gold);
+  color: white;
+}
+
+/* Section fade animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.section-tag {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+.divider-gold {
+  width: 3rem;
+  height: 2px;
+  background: linear-gradient(to right, var(--gold), var(--coral));
+  margin: 0 auto;
+}
